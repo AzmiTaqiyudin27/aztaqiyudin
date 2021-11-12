@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <!--buat template ikon-->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!--css nya-->
+    <link rel="stylesheet" href="style.css" />
     <!--aos-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Cv Azmi</title>
@@ -15,36 +17,71 @@
     <body id="Home">
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top" style="background-color: dodgerblue;">
-      <div class="container">
-        <a class="navbar-brand" href="#">Curiculum Vitae Azmi</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#Home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Tentang Saya">Tentang saya</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Skill">Skill</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Pendidikan">Pendidikan</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Kontak">Kontak</a>
+        <div class="container">
+          <a class="navbar-brand" href="#">Curiculum Vitae Azmi</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#Registrasiakun">Registrasi Akun</a>
+                <a class="nav-link active" aria-current="page" href="#Home">Home</a>
               </li>
-            </li>
-          </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#Tentang Saya">Tentang saya</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Skill">Skill</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Pendidikan">Pendidikan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Kontak">Kontak</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Registrasiakun">Registrasi Akun</a>
+                </li>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-    <!-- Akhir Navbar-->
+      </nav>
+      <!-- Akhir Navbar-->
+
+    <!--Registrasiakun-->
+    <section id="Registrasiakun">
+        <div class="container1">
+            <div class="row ms-4" data-aos="fade-right">
+                <div class="col-md-11">
+                    <h3>Registrasi Akun</h3>
+                    <form name="registrasiakun" method="get" onsubmit="return cek()">
+                        <div class="form-control" >
+                            <label for="nama"  width="100">Nama</label>
+                            <input type="text"  id="nama" placeholder="Masukkan nama" onkeypress="enter()">
+                          <small>Error</small>
+                        </div>
+                          <div class="form-control">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email"  id="email" placeholder="Masukkan email">
+                            <small>Error</small>
+                          </div>
+                          <div class="form-control">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" id="password1" placeholder="Masukkan password">
+                            <small>Error</small>
+                          </div>
+                          <div class="form-control">
+                            <label for="password" class="form-label">Konfirmasi Password</label>
+                            <input type="password" id="password2" placeholder="Ulangi password yang dibuat sebelumnya">
+                            <small>Error</small>
+                          </div>
+                          <button type="submit" class="btn btn-primary btn-block">Kirim</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!--Akhir Registrasiakun-->
 
     <!--Jumbotron-->
     <section class="jumbotron text-center">
@@ -285,10 +322,6 @@
         </section>
         <!--Akhir Registrasiakun-->
         
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e2edff" fill-opacity="1" d="M0,192L24,192C48,192,96,192,144,197.3C192,203,240,213,288,202.7C336,192,384,160,432,160C480,160,528,192,576,224C624,256,672,288,720,261.3C768,235,816,149,864,112C912,75,960,85,1008,112C1056,139,1104,181,1152,186.7C1200,192,1248,160,1296,144C1344,128,1392,128,1416,128L1440,128L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path></svg>
-    </section>
-    <!--Akhir Registrasiakun-->
-
         <!--Footer-->
         <footer style="background-color: #e2edff;" class="text-center text-black">Dibuat oleh Azmi Taqiyudin</footer>
     <!--Akhir Footer-->
