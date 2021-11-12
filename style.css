@@ -1,3 +1,51 @@
-section {
-  padding-top: 5rem;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+#Registrasiakun {
+  background-color: #f4f6f6;
+  font-family: 'open sans' sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 10px;
+}
+
+.container1 {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  width: 400px;
+}
+.form-control {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.form-control input {
+  padding: 10px;
+  font-size: 10px;
+  border: 2px solid #f0f0f0;
+  display: block;
+  width: 100%;
+}
+
+form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+button {
+  background-color: lightskyblue;
+  padding-top: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  border: 2px solid lightskyblue;
+  width: 100%;
+  border-radius: 5px;
+  color: white;
 }
